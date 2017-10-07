@@ -1,0 +1,28 @@
+{
+  "name": "nyt-react-search-app",
+  "version": "1.0.0",
+  "description": "React-based New York Times Article Search application which requires knowledge of how to Create React components, work with helper functions, and utilize the React mounting lifecycle to query and display articles based on user searches. Uses Node, Express and MongoDB so that users can save articles to read later.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/curtis-atkins/NYT-React-Search-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/curtis-atkins/NYT-React-Search-App/issues"
+  },
+  "homepage": "https://github.com/curtis-atkins/NYT-React-Search-App#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "create-react-app": "^1.4.1",
+    "express": "^4.16.1",
+    "mongoose": "^4.12.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router": "^4.2.0"
+  }
+}
