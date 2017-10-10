@@ -6,11 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/curtis-atkins/NYT-React-Search-App.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/curtis-atkins/NYT-React-Search-App.git",
+  "author": "catkins <catkinsjr28@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/curtis-atkins/NYT-React-Search-App/issues"

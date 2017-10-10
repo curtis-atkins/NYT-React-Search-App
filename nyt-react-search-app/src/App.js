@@ -5,9 +5,11 @@ import Results from "./components/Results";
 import Saved from "./components/Saved";
 
 const App = () => 
-	<Main />
-	<Search/>
-	<Results/>
-	<Saved/>;
+  <div className="wrapper">
+    <Main />
+    <Search/>
+    <Results/>
+    <Saved/>
+  </div>;
 
 export default App;
