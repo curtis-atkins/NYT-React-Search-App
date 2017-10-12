@@ -6,8 +6,8 @@ class Search extends Component {
 //setting components initial state
   state = {
     topic: "",
-    startYear:"",
-    endYear: ""
+    startDate:"",
+    endDate: ""
   };
   
   handleInputChange = event => {
@@ -17,8 +17,8 @@ class Search extends Component {
     if (name === "topic") {
       value = value.substring(0,70);
     }
-    else if (name === "startYear" || "endYear") {
-      value = value.substring(0,4);
+    else if (name === "startDate" || "endDate") {
+      value = value.substring(0,8);
     };
 
     //Updating the input's state
@@ -33,18 +33,18 @@ class Search extends Component {
     if (!this.state.topic){
       alert("You must enter a topic!");
     }
-    else if (!this.state.startYear) {
-      alert("You must enter a start year!")
+    else if (!this.state.startDate) {
+      alert("You must enter a start date!")
     }
-    else if (!this.state.endYear) {
-      alert("You must enter an end year!")
+    else if (!this.state.endDate) {
+      alert("You must enter an end date!")
     }
   
 
   this.setState({
     topic: "",
-    startYear: "",
-    endYear: ""
+    startDate: "",
+    endDate: ""
   });
 };
 
@@ -54,7 +54,7 @@ return (
  <div className="container-fluid">
     <div>
       <form className="form">
-        <input className="topic"
+        <input className="topic-input text-center"
           value={this.state.topic}
           name="topic"
           onChange={this.handleInputChange}
@@ -62,23 +62,24 @@ return (
           placeholder="What Topic would you like to find?"
         />
         <br/>
-        <input className="startYear"
-          value={this.state.startYear}
-          name="startYear"
+        <input className="startDate-input text-center"
+          value={this.state.startDate}
+          name="startDate"
           onChange={this.handleInputChange}
           type="number"
-          placeholder=" Start Year (i.e. 3005)"
+          placeholder="Start Date: 'YYYYMMDD'"
         />
         <br/>
-        <input className="endYear"
-          value={this.state.endYear}
-          name="endYear"
+        <input className="endDate-input text-center"
+          value={this.state.endDate}
+          name="endDate"
           onChange={this.handleInputChange}
           type="number"
-          placeholder=" End Year (i.e. 5003)"
+          placeholder= "End Date: 'YYYYMMDD'"
         />
         <br/>
-        <button onClick={this.handleFormSubmit}>SEARCH</button>
+        <button className="search-button text-center" onClick={this.handleFormSubmit}><strong>SEARCH</strong>
+        </button>
 </form>
     </div>
   </div>

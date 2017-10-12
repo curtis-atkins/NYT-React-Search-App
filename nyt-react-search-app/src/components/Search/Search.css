@@ -1,5 +1,14 @@
-.topic, .startYear, .endYear {
+.topic-input, .startDate-input, .endDate-input, .search-button {
 	color:#bdc2f4;
-	width: 750px;
-	margin: 10px 0 10px 0;
+	width: 500px;
+	margin: 0 auto;
+}
+
+.search-button {
+text-shadow: 1px 1px #000;
+font-size: 20px;
+}
+
+button {
+	background-color: lightgray;
 }
