@@ -1,4 +1,4 @@
-import axios from "axios";
+/*import axios from "axios";
 
 const BASEURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=";
 const APIKEY = "&api_key=80570bce76134579ab6dc9b124a2a80e&limit=20";
@@ -18,3 +18,4 @@ export default {
     })
   }
 };
+*/
